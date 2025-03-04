@@ -46,7 +46,7 @@ class ItemController extends Controller
         $item->update($request->all());
         return redirect()->route('items.index')->with('success', 'Item updated successfully.');
     }
-
+    
     public function destroy(Item $item)
     {
         $item->delete();
